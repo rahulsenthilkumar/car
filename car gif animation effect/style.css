@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:75px;
+    font-family: sans-serif;
+    background-color:#a4ebf3;
+    text-align: center;
+    color: #3edbf0;
+}
+
+
+
+
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway{
+    height:200px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 6s linear infinite;
+}
+
+@keyframes highway
+{
+    100%{
+        transform: translate(-3400px);
+    }
+}
+
+
+.city{
+    height:250px;
+    width: 500%;
+    display: block;
+    background-image: url(city.png);
+    position:absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city
+{
+    100%{
+        transform: translate(-1400px);
+    }
+}
+    
+
+.car{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.car img {
+    width: 400px;
+    animation: car 1s linear infinite;
+}
+
+
+@keyframes car
+{
+    100%{
+        transform: translate(-1px);
+    }
+
+    50%{
+        transform: translate(-1px);
+    }
+
+    0%{
+        transform: translate(-1px);
+    }
+}
+
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translate(-50px);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img{
+    width: 77px;
+    height: 75px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+    left: -118px;
+    position: absolute;
+}
+
+.front-wheel{
+    left: 127px;
+    position: absolute;
+}
+
+@keyframes wheel
+{
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+marquee{
+    font-size: 30px;
+    background-color: greenyellow;
+    color:green;
+}
